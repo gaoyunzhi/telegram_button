@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Yunzhi Gao",
     author_email="gaoyunzhi@gmail.com",
-    description="Generate international news in pdf.",
+    description="Append buttons to telegram message.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/gaoyunzhi/telegram_button",
@@ -19,11 +19,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'bs4',
-        'telegram_util>=0.0.27',
-        'cached_url>=0.0.1',
-        'pyyaml',
-        'readee>=0.0.14'
+        'telegram_util>=0.0.29',
     ],
     python_requires='>=3.0',
 )

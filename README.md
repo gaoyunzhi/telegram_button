@@ -1,15 +1,16 @@
 # telegram_button
 
-Generate international news in pdf. For people with limited access to internet.
+Append buttons to telegram message.
 
 ## usage
 
 ```
-import telegram_button
-new_2_pdg.gen()
+import telegram_button as bt
+# default button list is [👍, ❤️, 😂, 😢, 😡]
+bot.send_message(chat_id, text='test message',reply_markup=bt.get(YOUR_BUTTON_LIST))
+bt.addHandlers(dispatcher, YOUR_BUTTON_LIST)
 ```
 
 ## how to install
 
-`sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin` 
 `pip3 install telegram_button`
